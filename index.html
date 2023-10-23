@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Hello</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        .bgRed {
+            background-color: red;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+    </style>
 </head>
 <body>
     <div id="app">
-        <h1>{{ message }}</h1>
+        <h1 :class="bgRed">{{ message }}</h1>
         <img :src="img" alt="">
         <p>{{desc}}</p>
         <input type="text" name="" id="" v-model="ans">
